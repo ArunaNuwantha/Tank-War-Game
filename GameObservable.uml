@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>TankGame.GameObservable</OriginalElement>
+  <nodes>
+    <node x="551.1374999999998" y="3171.0">TankGame.Scene</node>
+    <node x="798.1455415499537" y="924.0">TankGame.TankWorld</node>
+    <node x="561.9901377217549" y="0.0">TankGame.GameObject.GameObject</node>
+    <node x="645.1374999999999" y="2865.0">TankGame.GameObject.Movable.Projectile</node>
+    <node x="317.0" y="644.5">TankGame.GameObject.Unmovable.PowerUp</node>
+    <node x="1357.0" y="2416.0">TankGame.GameObject.Unmovable.Wall</node>
+    <node x="397.6374999999999" y="1590.0">TankGame.GameObject.Movable.Tank</node>
+    <node x="21.5" y="1156.0">TankGame.GameObject.Movable.Movable</node>
+    <node x="601.0" y="644.5">TankGame.KeyInput</node>
+    <node x="1332.2320961718012" y="2636.0">TankGame.GameObject.Unmovable.BreakableWall</node>
+    <node x="286.5" y="448.0">TankGame.GameObject.Unmovable.Unmovable</node>
+    <node x="1019.0" y="622.0">TankGame.GameObservable</node>
+    <node x="819.0" y="644.0">TankGame.GameSounds</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="TankGame.TankWorld" target="TankGame.GameObject.Unmovable.PowerUp" relationship="CREATE">
+      <point x="-136.49954154995373" y="-15.0" />
+      <point x="362.0" y="1180.0" />
+      <point x="362.0" y="891.5" />
+      <point x="342.5" y="891.5" />
+      <point x="-106.5" y="61.5" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameObject.Movable.Projectile" relationship="DEPENDENCY">
+      <point x="4.584500462669894E-4" y="271.0" />
+      <point x="934.646" y="1557.5" />
+      <point x="854.0" y="1557.5" />
+      <point x="854.0" y="2165.5" />
+      <point x="820.646" y="2165.5" />
+      <point x="15.008500000000026" y="-106.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Projectile" target="TankGame.TankWorld" relationship="DEPENDENCY">
+      <point x="160.4995" y="-15.0" />
+      <point x="1137.0" y="2956.0" />
+      <point x="1137.0" y="1180.0" />
+      <point x="136.50045845004627" y="-15.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameObservable" relationship="CREATE">
+      <point x="91.85445845004631" y="-271.0" />
+      <point x="-134.5" y="84.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameObject.Movable.Tank" relationship="TO_ONE">
+      <point x="136.50045845004627" y="15.0" />
+      <point x="1094.0" y="1210.0" />
+      <point x="1094.0" y="3094.5" />
+      <point x="588.137" y="3094.5" />
+      <point x="-4.999999998744897E-4" y="381.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Tank" target="TankGame.TankWorld" relationship="TO_ONE">
+      <point x="190.49950000000013" y="-60.0" />
+      <point x="838.0" y="1911.0" />
+      <point x="838.0" y="1542.5" />
+      <point x="919.646" y="1542.5" />
+      <point x="-14.999541549953733" y="271.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Projectile" target="TankGame.GameObject.Movable.Tank" relationship="DEPENDENCY">
+      <point x="160.4995" y="0.0" />
+      <point x="1202.0" y="2971.0" />
+      <point x="1202.0" y="1971.0" />
+      <point x="190.49950000000013" y="0.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameObject.Unmovable.Wall" relationship="TO_MANY">
+      <point x="94.35445845004631" y="271.0" />
+      <point x="1029.0" y="1527.5" />
+      <point x="1078.0" y="1527.5" />
+      <point x="1078.0" y="3318.0" />
+      <point x="1642.732" y="3318.0" />
+      <point x="1642.732" y="2489.0" />
+      <point x="120.0" y="0.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Unmovable.Wall" target="TankGame.GameObject.Movable.Tank" relationship="DEPENDENCY">
+      <point x="-120.0" y="0.0" />
+      <point x="1202.0" y="2489.0" />
+      <point x="1202.0" y="1971.0" />
+      <point x="190.49950000000013" y="0.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameSounds" relationship="TO_ONE">
+      <point x="4.584500462669894E-4" y="-271.0" />
+      <point x="934.646" y="841.0" />
+      <point x="909.0" y="841.0" />
+      <point x="0.0" y="62.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Unmovable.BreakableWall" target="TankGame.GameObject.Movable.Tank" relationship="DEPENDENCY">
+      <point x="-146.50009617180126" y="0.0" />
+      <point x="1202.0" y="2708.5" />
+      <point x="1202.0" y="1971.0" />
+      <point x="190.49950000000013" y="0.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameObject.Unmovable.BreakableWall" relationship="TO_MANY">
+      <point x="136.50045845004627" y="-45.0" />
+      <point x="1170.0" y="1150.0" />
+      <point x="1170.0" y="2693.5" />
+      <point x="-146.50009617180126" y="-15.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Unmovable.Wall" target="TankGame.TankWorld" relationship="DEPENDENCY">
+      <point x="-13.268000000000029" y="73.0" />
+      <point x="1463.732" y="2608.0" />
+      <point x="1137.0" y="2608.0" />
+      <point x="1137.0" y="1180.0" />
+      <point x="136.50045845004627" y="-15.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameObject.Movable.Tank" relationship="CREATE">
+      <point x="136.50045845004627" y="0.0" />
+      <point x="1202.0" y="1195.0" />
+      <point x="1202.0" y="1971.0" />
+      <point x="190.49950000000013" y="0.0" />
+    </edge>
+    <edge source="TankGame.Scene" target="TankGame.GameObject.Unmovable.BreakableWall" relationship="DEPENDENCY">
+      <point x="254.49950000000013" y="15.0" />
+      <point x="1478.732" y="3303.0" />
+      <point x="-9.617180126042513E-5" y="72.5" />
+    </edge>
+    <edge source="TankGame.GameObject.Unmovable.BreakableWall" target="TankGame.GameObject.Unmovable.Wall" relationship="GENERALIZATION">
+      <point x="29.99990382819874" y="-72.5" />
+      <point x="31.73199999999997" y="73.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameObject.Movable.Projectile" relationship="TO_MANY">
+      <point x="15.000458450046267" y="271.0" />
+      <point x="949.646" y="1896.0" />
+      <point x="1007.0" y="1896.0" />
+      <point x="1007.0" y="2926.0" />
+      <point x="160.4995" y="-45.0" />
+    </edge>
+    <edge source="TankGame.Scene" target="TankGame.GameObject.Unmovable.BreakableWall" relationship="TO_MANY">
+      <point x="254.49950000000013" y="45.0" />
+      <point x="1170.0" y="3333.0" />
+      <point x="1170.0" y="2693.5" />
+      <point x="-146.50009617180126" y="-15.0" />
+    </edge>
+    <edge source="TankGame.GameObservable" target="TankGame.GameObject.GameObject" relationship="DEPENDENCY">
+      <point x="142.0" y="0.0" />
+      <point x="1330.0" y="706.0" />
+      <point x="1330.0" y="194.0" />
+      <point x="165.49986227824513" y="0.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Tank" target="TankGame.TankWorld" relationship="DEPENDENCY">
+      <point x="190.49950000000013" y="-30.0" />
+      <point x="901.0" y="1941.0" />
+      <point x="901.0" y="2608.0" />
+      <point x="1137.0" y="2608.0" />
+      <point x="1137.0" y="1180.0" />
+      <point x="136.50045845004627" y="-15.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Projectile" target="TankGame.GameObject.Movable.Movable" relationship="GENERALIZATION">
+      <point x="-160.5005" y="0.0" />
+      <point x="380.0" y="2971.0" />
+      <point x="380.0" y="1210.0" />
+      <point x="122.0" y="15.0" />
+    </edge>
+    <edge source="TankGame.Scene" target="TankGame.GameObject.Movable.Tank" relationship="TO_ONE">
+      <point x="254.49950000000013" y="-15.0" />
+      <point x="1094.0" y="3273.0" />
+      <point x="1094.0" y="3094.5" />
+      <point x="588.137" y="3094.5" />
+      <point x="-4.999999998744897E-4" y="381.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Unmovable.PowerUp" target="TankGame.GameObject.Movable.Tank" relationship="DEPENDENCY">
+      <point x="0.0" y="61.5" />
+      <point x="449.0" y="906.5" />
+      <point x="1202.0" y="906.5" />
+      <point x="1202.0" y="1971.0" />
+      <point x="190.49950000000013" y="0.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameObject.Unmovable.BreakableWall" relationship="CREATE">
+      <point x="136.50045845004627" y="-30.0" />
+      <point x="1116.0" y="1165.0" />
+      <point x="1116.0" y="3303.0" />
+      <point x="1478.732" y="3303.0" />
+      <point x="-9.617180126042513E-5" y="72.5" />
+    </edge>
+    <edge source="TankGame.KeyInput" target="TankGame.GameObject.Movable.Tank" relationship="TO_ONE">
+      <point x="15.0" y="61.5" />
+      <point x="715.0" y="891.5" />
+      <point x="1094.0" y="891.5" />
+      <point x="1094.0" y="3094.5" />
+      <point x="588.137" y="3094.5" />
+      <point x="-4.999999998744897E-4" y="381.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Unmovable.BreakableWall" target="TankGame.GameObject.GameObject" relationship="DEPENDENCY">
+      <point x="-9.617180126042513E-5" y="-72.5" />
+      <point x="1478.732" y="2579.5" />
+      <point x="1330.0" y="2579.5" />
+      <point x="1330.0" y="194.0" />
+      <point x="165.49986227824513" y="0.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameObject.Unmovable.PowerUp" relationship="TO_MANY">
+      <point x="-136.49954154995373" y="0.0" />
+      <point x="343.0" y="1195.0" />
+      <point x="343.0" y="906.5" />
+      <point x="380.137" y="906.5" />
+      <point x="-68.863" y="61.5" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Tank" target="TankGame.GameObject.Movable.Projectile" relationship="CREATE">
+      <point x="190.49950000000013" y="-45.0" />
+      <point x="854.0" y="1926.0" />
+      <point x="854.0" y="2165.5" />
+      <point x="820.646" y="2165.5" />
+      <point x="15.008500000000026" y="-106.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Projectile" target="TankGame.GameObject.Unmovable.Wall" relationship="DEPENDENCY">
+      <point x="160.4995" y="-30.0" />
+      <point x="1029.0" y="2941.0" />
+      <point x="1029.0" y="2504.0" />
+      <point x="-120.0" y="15.0" />
+    </edge>
+    <edge source="TankGame.Scene" target="TankGame.GameObject.Unmovable.PowerUp" relationship="DEPENDENCY">
+      <point x="-254.50049999999987" y="15.0" />
+      <point x="362.0" y="3303.0" />
+      <point x="362.0" y="891.5" />
+      <point x="342.5" y="891.5" />
+      <point x="-106.5" y="61.5" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Projectile" target="TankGame.GameObject.Unmovable.BreakableWall" relationship="DEPENDENCY">
+      <point x="160.4995" y="30.0" />
+      <point x="1116.0" y="3001.0" />
+      <point x="1116.0" y="3303.0" />
+      <point x="1478.732" y="3303.0" />
+      <point x="-9.617180126042513E-5" y="72.5" />
+    </edge>
+    <edge source="TankGame.GameObject.Unmovable.Unmovable" target="TankGame.GameObject.GameObject" relationship="GENERALIZATION">
+      <point x="0.0" y="-61.0" />
+      <point x="449.0" y="418.0" />
+      <point x="727.49" y="418.0" />
+      <point x="-1.3772175486792548E-4" y="194.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Tank" target="TankGame.GameObject.GameObject" relationship="DEPENDENCY">
+      <point x="190.49950000000013" y="-15.0" />
+      <point x="1330.0" y="1956.0" />
+      <point x="1330.0" y="194.0" />
+      <point x="165.49986227824513" y="0.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.KeyInput" relationship="CREATE">
+      <point x="-136.5" y="-30.0" />
+      <point x="670.0" y="1165.0" />
+      <point x="-30.0" y="61.5" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameSounds" relationship="TO_MANY">
+      <point x="4.584500462669894E-4" y="-271.0" />
+      <point x="934.646" y="841.0" />
+      <point x="909.0" y="841.0" />
+      <point x="0.0" y="62.0" />
+    </edge>
+    <edge source="TankGame.Scene" target="TankGame.GameObject.Movable.Projectile" relationship="DEPENDENCY">
+      <point x="-254.50049999999987" y="0.0" />
+      <point x="258.0" y="3288.0" />
+      <point x="258.0" y="1557.5" />
+      <point x="854.0" y="1557.5" />
+      <point x="854.0" y="2165.5" />
+      <point x="820.646" y="2165.5" />
+      <point x="15.008500000000026" y="-106.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameSounds" relationship="CREATE">
+      <point x="-40.64554154995369" y="-271.0" />
+      <point x="-15.0" y="62.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Projectile" target="TankGame.GameObject.Movable.Tank" relationship="TO_ONE">
+      <point x="160.4995" y="15.0" />
+      <point x="1094.0" y="2986.0" />
+      <point x="1094.0" y="3094.5" />
+      <point x="588.137" y="3094.5" />
+      <point x="-4.999999998744897E-4" y="381.0" />
+    </edge>
+    <edge source="TankGame.Scene" target="TankGame.GameObject.Movable.Projectile" relationship="TO_MANY">
+      <point x="14.999500000000126" y="-117.0" />
+      <point x="820.637" y="3124.5" />
+      <point x="1007.0" y="3124.5" />
+      <point x="1007.0" y="2926.0" />
+      <point x="160.4995" y="-45.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Projectile" target="TankGame.TankWorld" relationship="TO_ONE">
+      <point x="63.36250000000007" y="-106.0" />
+      <point x="869.0" y="2150.5" />
+      <point x="838.0" y="2150.5" />
+      <point x="838.0" y="1542.5" />
+      <point x="919.646" y="1542.5" />
+      <point x="-14.999541549953733" y="271.0" />
+    </edge>
+    <edge source="TankGame.Scene" target="TankGame.GameObject.Unmovable.Wall" relationship="TO_MANY">
+      <point x="254.49950000000013" y="-30.0" />
+      <point x="1078.0" y="3258.0" />
+      <point x="1078.0" y="3318.0" />
+      <point x="1642.732" y="3318.0" />
+      <point x="1642.732" y="2489.0" />
+      <point x="120.0" y="0.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.Scene" relationship="CREATE">
+      <point x="-48.64554154995369" y="271.0" />
+      <point x="886.0" y="2658.5" />
+      <point x="983.6374999999999" y="2658.5" />
+      <point x="178.0000000000001" y="-117.0" />
+    </edge>
+    <edge source="TankGame.Scene" target="TankGame.GameObject.Unmovable.Wall" relationship="DEPENDENCY">
+      <point x="-4.999999998744897E-4" y="-117.0" />
+      <point x="805.637" y="3109.5" />
+      <point x="1029.0" y="3109.5" />
+      <point x="1029.0" y="2504.0" />
+      <point x="-120.0" y="15.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Movable" target="TankGame.GameObject.GameObject" relationship="GENERALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="143.5" y="418.0" />
+      <point x="727.49" y="418.0" />
+      <point x="-1.3772175486792548E-4" y="194.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Unmovable.BreakableWall" target="TankGame.TankWorld" relationship="DEPENDENCY">
+      <point x="14.99990382819874" y="-72.5" />
+      <point x="1493.732" y="2608.0" />
+      <point x="1137.0" y="2608.0" />
+      <point x="1137.0" y="1180.0" />
+      <point x="136.50045845004627" y="-15.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Unmovable.PowerUp" target="TankGame.GameObject.Unmovable.Unmovable" relationship="GENERALIZATION">
+      <point x="-132.0" y="0.0" />
+      <point x="292.0" y="706.0" />
+      <point x="292.0" y="604.5" />
+      <point x="449.0" y="604.5" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="TankGame.Scene" target="TankGame.GameObject.Movable.Tank" relationship="DEPENDENCY">
+      <point x="254.49950000000013" y="0.0" />
+      <point x="1202.0" y="3288.0" />
+      <point x="1202.0" y="1971.0" />
+      <point x="190.49950000000013" y="0.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.Scene" relationship="TO_ONE">
+      <point x="109.35445845004631" y="271.0" />
+      <point x="238.36250000000018" y="-117.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameObservable" relationship="TO_ONE">
+      <point x="128.9999999999999" y="-271.0" />
+      <point x="-97.35445845004642" y="84.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Unmovable.Wall" target="TankGame.GameObject.Unmovable.Unmovable" relationship="GENERALIZATION">
+      <point x="0.0" y="-73.0" />
+      <point x="1477.0" y="604.5" />
+      <point x="449.0" y="604.5" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.KeyInput" relationship="TO_ONE">
+      <point x="-136.5" y="-56.5" />
+      <point x="685.0" y="1138.5" />
+      <point x="-15.0" y="61.5" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Projectile" target="TankGame.GameObject.GameObject" relationship="DEPENDENCY">
+      <point x="0.008500000000026375" y="-106.0" />
+      <point x="805.646" y="1986.0" />
+      <point x="1330.0" y="1986.0" />
+      <point x="1330.0" y="194.0" />
+      <point x="165.49986227824513" y="0.0" />
+    </edge>
+    <edge source="TankGame.KeyInput" target="TankGame.GameObject.Movable.Tank" relationship="DEPENDENCY">
+      <point x="0.0" y="61.5" />
+      <point x="700.0" y="906.5" />
+      <point x="1202.0" y="906.5" />
+      <point x="1202.0" y="1971.0" />
+      <point x="190.49950000000013" y="0.0" />
+    </edge>
+    <edge source="TankGame.TankWorld" target="TankGame.GameObject.Unmovable.Wall" relationship="CREATE">
+      <point x="48.99145845004625" y="271.0" />
+      <point x="983.637" y="1557.5" />
+      <point x="1029.0" y="1557.5" />
+      <point x="1029.0" y="2504.0" />
+      <point x="-120.0" y="15.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Unmovable.PowerUp" target="TankGame.TankWorld" relationship="DEPENDENCY">
+      <point x="-15.0" y="61.5" />
+      <point x="434.0" y="1572.5" />
+      <point x="901.0" y="1572.5" />
+      <point x="901.0" y="2608.0" />
+      <point x="1137.0" y="2608.0" />
+      <point x="1137.0" y="1180.0" />
+      <point x="136.50045845004627" y="-15.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Movable.Tank" target="TankGame.GameObject.Movable.Movable" relationship="GENERALIZATION">
+      <point x="-190.50049999999982" y="0.0" />
+      <point x="380.0" y="1971.0" />
+      <point x="380.0" y="1210.0" />
+      <point x="122.0" y="15.0" />
+    </edge>
+    <edge source="TankGame.GameObject.Unmovable.Wall" target="TankGame.GameObject.GameObject" relationship="DEPENDENCY">
+      <point x="-120.0" y="-15.0" />
+      <point x="1330.0" y="2474.0" />
+      <point x="1330.0" y="194.0" />
+      <point x="165.49986227824513" y="0.0" />
+    </edge>
+    <edge source="TankGame.Scene" target="TankGame.GameObject.Unmovable.PowerUp" relationship="TO_MANY">
+      <point x="-254.50049999999987" y="-15.0" />
+      <point x="343.0" y="3273.0" />
+      <point x="343.0" y="906.5" />
+      <point x="380.137" y="906.5" />
+      <point x="-68.863" y="61.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="651.5" y="325.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
